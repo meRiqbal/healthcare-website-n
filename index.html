@@ -584,6 +584,55 @@
 </section>
 <!--Contact section 2 end-->
 
+<section class="contact" id="contact">
+        <h1 class="heading">Book Appointment</h1>
+        <!-- Form for booking appointment -->
+        <form action="index.php" method="post">
+            <!-- PHP messages handling (uncomment if necessary) -->
+            <!-- <?php 
+                if(isset($message)){
+                    foreach($message as $msg){
+                        echo '<p class="message">'.$msg.'</p>';
+                    }
+                }
+            ?> -->
+            
+            <!-- Input fields for name, phone number, email, specialist, doctor, and date -->
+            <input type="text" name="name" placeholder="Your Name" class="box" required><br>
+            <input type="tel" name="number" placeholder="Phone Number" class="box" required><br>
+            <input type="email" name="email" placeholder="Email Id" class="box" required><br>
+            <select name="specialist" id="option1" required>
+                <option value="" disabled selected>Select Specialist Type *</option>
+                <option value="General Physician">General Physician</option>
+                <option value="Gynecologist">Gynecologist</option>
+                <option value="Cardiologists">Cardiologists</option>
+                <!-- Add more options as needed -->
+            </select><br>
+            <select name="doctor" id="option2" required>
+                <option value="" disabled selected>Select Doctor *</option>
+                <option value="Dr. Ashok Seth">Dr. Ashok Seth</option>
+                <option value="Dr. G Girish">Dr. G Girish</option>
+                <!-- Add more options as needed -->
+            </select><br>
+            <input type="datetime-local" name="date" class="box" required><br>
+            
+            <!-- Submit button with JavaScript onclick event -->
+            <button type="submit" name="submit" onclick="sendEmail(); resetForm(); return false;">Submit</button>
+        </form>
+    </section>
+
+    <!-- Include any necessary JavaScript -->
+    <script>
+        // JavaScript function to send email (if needed)
+        function sendEmail() {
+            // Implement email sending functionality if required
+        }
+
+        // JavaScript function to reset form after submission
+        function resetForm() {
+            document.getElementById("contact-form").reset(); // Replace "contact-form" with your form ID if defined
+        }
+    </script>
 
 
 
