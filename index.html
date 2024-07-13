@@ -628,31 +628,30 @@
 
 
 <!--it is used for team section to scroll left and right - 1 -->
-<!--swiper js link  -->
-<script src="swiper-bundle.min.js.download"></script>
-
-<!-- Include Swiper's JS -->
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-document.addEventListener('DOMContentLoaded', (event) => {
-    const swiper = new Swiper('.swiper-container', {
-        // Optional parameters
-        direction: 'horizontal',
-        loop: true,
+    
+<!--swiper js link  -->
+<script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const swiper = new Swiper('.swiper-container', {
+                // Optional parameters
+                direction: 'horizontal',
+                loop: true,
 
-        // If we need pagination
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
+                // If we need pagination
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
 
-        // Navigation arrows
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-    });
-});
-
+                // Navigation arrows
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        });
+</script>
 
 
 
