@@ -309,6 +309,16 @@ section{
     line-height: 2;
     color: var(--light-color);
 }
+
+/* Decrease image size for team section */
+.team .swiper-slide .image img {
+    width: 150px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Optional: make the image circular */
+    margin: 0 auto; /* Center the image horizontally */
+    display: block;
+}
+
 /* team section ends */
 
 
